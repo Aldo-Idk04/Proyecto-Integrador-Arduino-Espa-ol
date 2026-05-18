@@ -6,18 +6,21 @@ mover servos y esperar tiempos.
 
 ## Información del Curso
 
-| Campo | Valor |
-|---|---|
-| Materia | Compiladores |
+| Campo        | Valor                               |
+| ------------ | ----------------------------------- |
+| Materia      | Programación de Sistemas de Base 1 |
 | Institución | Universidad Autónoma de Tamaulipas |
-| Semestre | 2026-1 |
-| Profesor | Dr. Juan Carlos Méndez Ríos |
+| Semestre     | 2026-1                              |
+| Profesor     | Muñoz Quintero Dante Adolfo        |
 
 ## Integrantes del Equipo
 
-| Nombre | Matrícula |
-|---|---|
-| — | — |
+| Nombre                         | Matrícula  |
+| ------------------------------ | ----------- |
+| Gomez Rubio Iram Said          | a2223330159 |
+| Reyes Avalos Joshua Emmanuel   | a2223330185 |
+| Contreras Morales Ricardo Axel | a2223330147 |
+| Serrano Vargas Aldo Antonio    | a2223330198 |
 
 ## Descripción del Lenguaje
 
@@ -37,21 +40,21 @@ mover servo D9 a 90 grados
 
 ## Tokens Reconocidos
 
-| Categoría | Palabras / Símbolos |
-|---|---|
-| ACCION | `configurar` `encender` `apagar` `leer` `escribir` `esperar` `mover` `repetir` |
-| COMPONENTE | `led` `sensor` `servo` `buzzer` `motor` `boton` `pantalla` |
-| PALABRA_CLAVE | `pin` `como` `en` `a` `durante` `veces` |
-| MODO | `entrada` `salida` `entrada_pullup` |
-| VALOR_DIGITAL | `alto` `bajo` |
-| CONTROL | `si` `entonces` `sino` `fin_si` `fin_repetir` |
-| OPERADOR | `>` `<` `>=` `<=` `==` `!=` |
-| UNIDAD | `ms` `segundos` `grados` |
-| PIN_ANALOGICO | `A0` … `A5` |
-| PIN_DIGITAL | `D0` … `D13` |
-| NUMERO | `100` `3.3` `500` |
-| CADENA | `"Hola Arduino"` |
-| COMENTARIO | `# …` `// …` `/* … */` (descartados) |
+| Categoría    | Palabras / Símbolos                                                                           |
+| ------------- | ---------------------------------------------------------------------------------------------- |
+| ACCION        | `configurar` `encender` `apagar` `leer` `escribir` `esperar` `mover` `repetir` |
+| COMPONENTE    | `led` `sensor` `servo` `buzzer` `motor` `boton` `pantalla`                       |
+| PALABRA_CLAVE | `pin` `como` `en` `a` `durante` `veces`                                            |
+| MODO          | `entrada` `salida` `entrada_pullup`                                                      |
+| VALOR_DIGITAL | `alto` `bajo`                                                                              |
+| CONTROL       | `si` `entonces` `sino` `fin_si` `fin_repetir`                                        |
+| OPERADOR      | `>` `<` `>=` `<=` `==` `!=`                                                        |
+| UNIDAD        | `ms` `segundos` `grados`                                                                 |
+| PIN_ANALOGICO | `A0` … `A5`                                                                               |
+| PIN_DIGITAL   | `D0` … `D13`                                                                              |
+| NUMERO        | `100` `3.3` `500`                                                                        |
+| CADENA        | `"Hola Arduino"`                                                                             |
+| COMENTARIO    | `# …` `// …` `/* … */` (descartados)                                                  |
 
 ## Cómo Ejecutar
 
@@ -86,6 +89,7 @@ analizador-lexico-arduinoespanol/
 ## Ejemplos de Uso
 
 **Entrada válida (`programa1.ard`):**
+
 ```
 configurar pin 13 como salida
 encender led 13
@@ -93,6 +97,7 @@ esperar 500 ms
 ```
 
 **Salida esperada:**
+
 ```
 [  1] Token(Configurar       'configurar'  linea=2, col=1)
 [  2] Token(Pin              'pin'         linea=2, col=12)
